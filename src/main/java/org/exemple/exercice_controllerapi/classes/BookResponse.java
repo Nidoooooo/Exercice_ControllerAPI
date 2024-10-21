@@ -17,6 +17,7 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 @Data
 @JsonInclude(NON_NULL)
 public class BookResponse {
+    private Long id;
     private String title;
     private String author;
     public static BookResponse fromEntity(Book book) {
